@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="building a car purchase website" />
+  <meta name="keywords" content="HTML5, css"/>
+  <meta name="author" content="Nishant" />
+  <link href="styles/styles.css" rel="stylesheet"/>
+  <script src="scripts/booking.js"></script>
+  
+  
+  <title>Payment</title>
+</head>
+<body>
+
+  <header>
+    <h1>Payment Page</h1> </header>
+    
+    
+     
+
+	<h2>Booking Confirmation</h2>
+
+
+<form id="bookform" method="post" action="https://mercury.swin.edu.au/it000000/formtest.php" novalidate="novalidate" > 
+	<fieldset>
+		<legend>Your Purchse</legend>
+		<p>Your Name: <span id="confirm_name"></span></p>
+		<p>E-mail: <span id="confirm_mail"></span></p>
+		<p>Address: <span id="confirm_add"></span></p>
+		
+    <p>Quantity: <span  id="confirm_quant"></span></p>
+    <p>Product: <span  id="confirm_product"></span></p>
+    <p>Total: $<span id="confirm_total"></span></p>
+		
+    <input type="hidden" name="firstName" id="firstName" />
+    <input type="hidden" name="lastName" id="lastName" />
+    <input type="hidden" name="emailAdd" id="emailAdd" />
+    <input type="hidden" name="getQuantity" id="getQuantity" />
+    <input type="hidden" name="stName" id="stName" />
+    <input type="hidden" name="burbName" id="burbName" />
+    <input type="hidden" name="state" id="state" />
+    <input type="hidden" name="postCode" id="postCode" />
+    <input type="hidden" name="totalCharge" id="totalCharge"/>
+    <input type="hidden" name="myCar" id="myCar"/>
+
+    
+      <fieldset>
+     <legend>Your Card Details</legend>
+        <p><label for = "yourname">Name:</label>
+        <input type="text" name="cname" id="yourname" maxlength="40" required/><br/>
+        </p>
+        <p><label for ="card">Card Number:</label> 
+        <input type="text" name="cardNumber" id="card" maxlength="16" placeholder="Your 15/16 digit number required"/>
+        <label for= "type">Card Type:</label>
+        <select id="type" name="ctype" required>
+          <option value = "none">Please Select</option>
+            <option value="visa">Visa</option>
+            <option value="mastercard">MasterCard</option>
+            <option value="americanexpress">AmericanExperess</option>
+        </select>
+      </p>
+        
+       <p><label for = "expiry">Expiry:</label>  
+          <input type="text" name="expires" id="expiry" maxlength="10" placeholder="MM/YY" pattern = "(0[1-9]|1[0-2])\/?([0-9]{2})" required/><br/></p>
+          <p><label for = "cvv">CVV:</label>
+          <input type="text" name="cvv" id="cvv" maxlength="4" placeholder="123" pattern = "[0-9]{3,4}" required/></p>
+        
+        
+
+          <br/>
+          <br/>
+         
+
+      
+      </fieldset>
+
+		
+		
+		
+		<input type="submit" value="Check Out" />
+		<button type="button" id="cancelButton">Cancel</button>
+    </fieldset>
+</form>
+</body>
+</html>
