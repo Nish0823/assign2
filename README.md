@@ -1,2 +1,1 @@
-# cwa2021
- web app uni
+Full stack web app for Uni project using HTML,CSS,JS , PHP and mySQL.
